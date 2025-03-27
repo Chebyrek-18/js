@@ -7,16 +7,15 @@ function zad1() {
 }
 
 function zad2() {
-    let city = prompt("Введите название города");
-    let year = prompt("Введите год основания");
-    let nas = prompt("Введите население города");
+    let city = prompt("Введите название города", 'Казань');
+    let year = prompt("Введите год основания", 1005);
+    let nas = prompt("Введите население города", '1.3млн');
     alert(`Городу ${city} исполнилось ${new Date().getFullYear() - year} лет с момента его образования. Население - ${nas} человек`);
 }
 
 function zad3() {
     let R = prompt('Введите радиус круга:', 1);
-    alert(typeof (R));
-    alert(Math.PI * R * R);
+    alert('Площадь круга равна: '+Math.PI * R * R);
 
 }
 function zad4() {
