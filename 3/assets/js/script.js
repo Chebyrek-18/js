@@ -7,9 +7,9 @@ function Zadanie1() {
         if (price == money) {
             alert("Покупка совершена");
         } else if (price > money) {
-            alert(`Для покупки не хватает ${price - money} р.`);
+            alert(`Для покупки не хватает ${price - money} ₽.`);
         } else {
-            alert(`Покупка совершена. Сдача ${money - price} р.`);
+            alert(`Покупка совершена. Сдача ${money - price} ₽.`);
         }
     } else {
         alert("Неверный формат ввода");
