@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="zad1">Задание 1</button>
+    <button id="zad2">Задание 2</button>
+    <button id="zad3">Задание 3</button>
+
+    <div id="text" class="block">Меня нужно скрыть</div>
+
+    <div id="text-2" class="block">Меня нужно скрыть, а потом обратно показать</div>
+    <div class="zad4">
+        <button class="btn" id="hoverBtn">hover</button>
+        <button class="btn" id="clickBtn">click</button>
+        <button class="btn" id="doubleClickBtn">dblclick</button>
+        <button class="btn" id="mouseDownBtn">mousedown</button>
+        <button class="btn" id="mouseUpBtn">mouseup</button>
+    </div>
+    <div class="zad6 block">Задание 6</div>
+
+    <script src="assets/js/script.js"></script>
+
+    <style>
+        .block {
+            width: 100px;
+            height: 100px;
+            background-color: salmon;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .display {
+            display: none;
+        }
+
+        .zad4 {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 350px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hoverBtn {
+            background-color: #b4e016;
+            color: white;
+        }
+
+        #hoverBtn.hover {
+            background-color: #c2e828;
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #clickBtn {
+            background-color: #0e813a;
+            color: white;
+        }
+
+        #clickBtn.click {
+            background-color: #ed6f14;
+            transform: scale(0.95);
+        }
+
+        #doubleClickBtn {
+            background-color: #ff00e6;
+            color: white;
+        }
+
+        #mouseDownBtn {
+            background-color: #450cee;
+            color: white;
+        }
+
+        #mouseUpBtn {
+            background-color: #ff000095;
+            color: white;
+        }
+    </style>
+</body>
+
+</html>
