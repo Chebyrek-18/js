@@ -14,6 +14,10 @@ body {
     height: 100%;
 }
 
+body{
+    padding-bottom: 50px;
+}
+
 .wrapper {
     min-height: 100%;
     display: flex;
