@@ -1,0 +1,82 @@
+.modal_container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal_container.active {
+    display: flex;
+}
+
+.open_modal {
+    padding: 12px;
+    background-color: rgb(13, 236, 225);
+    font-size: 16px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.modal {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 50%;
+    position: relative;
+}
+
+.close_modal {
+    cursor: pointer;
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 4px 10px #e5e5e5;
+    background-color: rgb(15, 83, 143);
+    max-width: fit-content;
+    padding: 6px;
+    margin: 40px auto;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 16px;
+}
+
+.tab.active {
+    background-color: rgb(55, 255, 148);
+    color: white;
+}
+
+.content {
+    border: 2px solid rgb(29, 194, 250);
+    padding: 50px;
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.content:last-child {
+    border: 2px solid rgb(151, 231, 255);
+}
